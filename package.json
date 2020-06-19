@@ -1,0 +1,13 @@
+{
+    "jshintConfig": {
+        "esversion": 6,
+        "undef": true,
+        "unused": true,
+        "shadow": true,
+        "curly": true,
+        "bitwise": true,
+        "browser": true,
+        "devel": true,
+        "jquery": true
+    }
+}

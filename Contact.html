@@ -2,35 +2,40 @@
 <html lang="en">
 <head>
 	<title>Contact me</title>
-	<link rel="stylesheet" type="text/css" href="portfoliodesign.css">
-<!--<link rel="stylesheet" type="text/css" href="portfoliodesign.css" media="print">-->
-</head>
-<nav>
+  <link rel="stylesheet" type="text/css" href="portfoliodesign.css">
+  <script src="script.js"></script> 
 <ul> 
-	<li><a href="Index.html">Home</a></li>
-	<li><a href="About.html">About Me</a></li>
-	<li><a href="Services.html">Services</a></li>
-	<li><a href="Contact.html">Contact</a></li>
+  <li><a href="Index.html">Home</a></li>
+  <li><a href="About.html">About me</a></li>
+  <li><a href="Services.html">Services</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  
 </ul>
-	</nav>
-	
-<p>Contact me today for a free consultation</p>
-<div>
-  <form action="/action_page.php">
-    <label for="flname">Full Name:</label>
-    <input type="text" id="flname" name="firstlastname" placeholder="Your name..">
-
-    <label for="emailaddress">Email Address:</label>
-    <input type="text" id="emailaddress" name="emailaddress" placeholder="Enter your email address..">
-	<label for="message">Message:</label>
-    <input type="text" id="message" name="message" placeholder="Enter Message..">
-   <input type="submit" value="Submit">
+  </head>
+  <main>
+	<p class="cent">Contact me today for a free consultation</p>
+  <form action=" http://bucs601.com/submit.php" name= "myForm" method="POST"  onsubmit=" return myvalidator()">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name.." pattern= "/^[A-Za-z]+$" title="Alpha Characters only"/>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name." pattern="/^[A-Za-z]+$/" title="Alpha Characters only"/>
+    <p> Please select your Facilitator</p>
+    <P>
+    <input type="checkbox" name="Hanson" value="hanson">Hanson<br/>
+    <input type="checkbox" name="fazil" value="fazil">Fazil<br/>
+    <input type="checkbox" name="chris" value="chris">Chris<br/>
+    </P>
+	<label for="facilitator">Facilitator:</label>
+    <input type="text" id="facilitator" name="facilitator" placeholder="Enter Facilitator Name.." pattern="/^[A-Za-z]+$" title="Alpha Characters only"/>
+  <p>What is the nature of your request?</p>
+  <p>
+    <input type="radio" name="radiotype" value="Grades">Grades <br/>
+    <input type="radio" name="radiotype" value="Quiz">Quiz<br/>
+    <input type="radio" name="radiotype" value="Final Project">Final Project<br/>
+  </p>
+   <input type="submit" value="Submit" >
   </form>
-</div>
-<footer>
-<img src="socialmedia.png" alt="socialmediaplatform" style="width:150px;height:60px;">
-<a href="https://www.facebook.com/">Visit my Facebook page</a>
-<a href="https://www.instagram.com/">Visit my instagram page</a>
-</footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </html>
-<!-- This page is the contact me page. This is not my favorite because the icon is not in the correct spot. I would like to work on this more so that the user can click on the icon and take them directly to the social platform. I couldnt find a free icon to download.-->
